@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+  <body>
+  <div class="container">
+    <!-- Box principale To-Do -->
+    <div class="box" id="todo-box">
+      <h1>TO-DO List</h1>
+
+      <div id="search-container">
+        <input type="text" class="search-input" id="search" placeholder="Search todos">
+      </div>
+
+      <div style="display: flex; gap: 10px;">
+        <input id="task" type="text" placeholder="Add a new task" style="flex-grow: 1;">
+        <button id="add">ADD</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+    </div>
+
+    <!-- Box pour les filtres -->
+    <div class="box" id="filter-box">
+      <div id="btn" class="filter-container">
+        <button id="toutes" class="filter-btn active">All</button>
+        <button id="en-cours" class="filter-btn">In Progress</button>
+        <button id="termine" class="filter-btn">Completed</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Barre de progression déplacée ici, à l'extérieur des boxes -->
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+  <p id="progress-text">0% completed</p>
+
+  <!-- Citation de fin -->
+  <div id="completion-overlay">
+    <div class="quote-box">
+      <p class="quote-text">« good job!! you got everything done »</p>
+    </div>
+  </div>
+
+  <script src="test.js"></script>
+</body>
